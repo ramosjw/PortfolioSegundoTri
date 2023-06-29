@@ -89,7 +89,24 @@ html{
     color:#EE829D ;
     font-weight: 500;
 }
-.home .home-content a{
+.home .home-content .espaco{
+    display: flex;
+    flex-direction: column;
+}
+.home .home-content .espaco a{
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+.home .home-content button{
     display: inline-block;
     background: #EE829D;
     color: #fff;
@@ -98,8 +115,9 @@ html{
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid #EE829D;
+    cursor: pointer;
 }
-.home .home-content a:hover{
+.home .home-content button:hover{
     color: #EE829D;
     background: none;
 }
